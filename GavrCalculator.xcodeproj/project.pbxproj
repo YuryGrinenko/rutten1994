@@ -22,6 +22,7 @@
 		4221F6F3196D1D000003D2A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4221F6D2196D1D000003D2A0 /* UIKit.framework */; };
 		4221F6FB196D1D000003D2A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4221F6F9196D1D000003D2A0 /* InfoPlist.strings */; };
 		4221F6FD196D1D000003D2A0 /* GavrCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4221F6FC196D1D000003D2A0 /* GavrCalculatorTests.m */; };
+		4221F708196D26F20003D2A0 /* AGAModelCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4221F707196D26F20003D2A0 /* AGAModelCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		4221F6F8196D1D000003D2A0 /* GavrCalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GavrCalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		4221F6FA196D1D000003D2A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4221F6FC196D1D000003D2A0 /* GavrCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GavrCalculatorTests.m; sourceTree = "<group>"; };
+		4221F706196D26F20003D2A0 /* AGAModelCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAModelCalculator.h; sourceTree = "<group>"; };
+		4221F707196D26F20003D2A0 /* AGAModelCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAModelCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				4221F6E7196D1D000003D2A0 /* AGAViewController.m */,
 				4221F6E9196D1D000003D2A0 /* Images.xcassets */,
 				4221F6D5196D1D000003D2A0 /* Supporting Files */,
+				4221F706196D26F20003D2A0 /* AGAModelCalculator.h */,
+				4221F707196D26F20003D2A0 /* AGAModelCalculator.m */,
 			);
 			path = GavrCalculator;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				4221F6E8196D1D000003D2A0 /* AGAViewController.m in Sources */,
 				4221F6DF196D1D000003D2A0 /* AGAAppDelegate.m in Sources */,
 				4221F6DB196D1D000003D2A0 /* main.m in Sources */,
+				4221F708196D26F20003D2A0 /* AGAModelCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import "AGAViewController.h"
 
 @interface AGAViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *outputLabel;
 
 @end
 
@@ -24,6 +25,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)doCancel:(id)sender {
+    self.outputLabel.text = @"0";
+
 }
 
 @end
