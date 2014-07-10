@@ -19,7 +19,9 @@
 
 
 //- (void) setOperand: (NSString *) operand;
-- (NSString *) doOperation: (NSString *) thisOperation;
+- (NSString *) doOperation;
+- (void) setOperand: (NSString *)operand;
+
 
 
 
