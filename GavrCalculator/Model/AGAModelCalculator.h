@@ -19,7 +19,7 @@
 
 
 //- (void) setOperand: (NSString *) operand;
-- (NSString *) doOperation;
+- (double) doOperation;
 - (void) setOperand: (NSString *)operand;
 
 

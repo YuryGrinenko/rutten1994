@@ -10,7 +10,7 @@
 
 @implementation AGAModelCalculator
 
-- (NSString *) doOperation {
+- (double) doOperation {
     
     if ([self.operation isEqualToString:@"+"]){
         rezultOperand = self.firstOperand.doubleValue + self.secondOperand.doubleValue;
@@ -21,11 +21,12 @@
     } else if ([self.operation isEqualToString:@":"]) {
         rezultOperand = self.firstOperand.doubleValue / self.secondOperand.doubleValue;
     }
-    return ([NSString stringWithFormat:@"%f", rezultOperand]);
+   // return ([NSString stringWithFormat:@"%f", rezultOperand]);
+    return rezultOperand;
 }
 
 - (void) setOperand: (NSString *)operand {
-    if (self.operation) {
+    if (!self.operation) {
         self.firstOperand = operand;
     } else {
         self.secondOperand = operand;

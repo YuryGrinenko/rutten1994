@@ -8,6 +8,7 @@
 
 #import "AGAViewController.h"
 #import "AGAModelCalculator.h"
+#import "AGAResultFormatter.h"
 
 @interface AGAViewController (){
     BOOL operationFlag;
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *operationButtonsEnabler;
 @property (weak, nonatomic) IBOutlet UIButton *solveButton;
 @property (strong, nonatomic) NSString * fullOperand;
+@property (strong, nonatomic) AGAResultFormatter * fullResult;
 
 @end
 
@@ -28,6 +30,8 @@
 {
     [super viewDidLoad];
     _solver = [[AGAModelCalculator alloc]init];
+   _fullResult = [[AGAResultFormatter alloc] init];
+    
     
     for (UIButton * operationButton in self.operationButtonsEnabler) {
         operationButton.enabled = NO;
@@ -95,7 +99,10 @@
 
 - (IBAction)solveTouched:(id)sender {
     
-    self.outputLabel.text = [self.solver doOperation];
+    
+    [self.solver doOperation];
+    self.outputLabel.text = [self.fullResult resultInStringForm:self.solver];
+    
     self.solveButton.enabled = NO;
 }
 

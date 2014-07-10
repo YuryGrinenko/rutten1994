@@ -22,7 +22,8 @@
 		4221F6F3196D1D000003D2A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4221F6D2196D1D000003D2A0 /* UIKit.framework */; };
 		4221F6FB196D1D000003D2A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4221F6F9196D1D000003D2A0 /* InfoPlist.strings */; };
 		4221F6FD196D1D000003D2A0 /* GavrCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4221F6FC196D1D000003D2A0 /* GavrCalculatorTests.m */; };
-		4221F708196D26F20003D2A0 /* AGAModelCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4221F707196D26F20003D2A0 /* AGAModelCalculator.m */; };
+		42CAD9E9196F3BE5004EE33D /* AGAModelCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAD9E8196F3BE5004EE33D /* AGAModelCalculator.m */; };
+		42CAD9F2196F44D9004EE33D /* AGAResultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAD9F1196F44D9004EE33D /* AGAResultFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +57,10 @@
 		4221F6F8196D1D000003D2A0 /* GavrCalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GavrCalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		4221F6FA196D1D000003D2A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4221F6FC196D1D000003D2A0 /* GavrCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GavrCalculatorTests.m; sourceTree = "<group>"; };
-		4221F706196D26F20003D2A0 /* AGAModelCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAModelCalculator.h; sourceTree = "<group>"; };
-		4221F707196D26F20003D2A0 /* AGAModelCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAModelCalculator.m; sourceTree = "<group>"; };
+		42CAD9E7196F3BE5004EE33D /* AGAModelCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGAModelCalculator.h; path = GavrCalculator/Model/AGAModelCalculator.h; sourceTree = "<group>"; };
+		42CAD9E8196F3BE5004EE33D /* AGAModelCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGAModelCalculator.m; path = GavrCalculator/Model/AGAModelCalculator.m; sourceTree = "<group>"; };
+		42CAD9F0196F44D9004EE33D /* AGAResultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAResultFormatter.h; sourceTree = "<group>"; };
+		42CAD9F1196F44D9004EE33D /* AGAResultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAResultFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 		4221F6D4196D1D000003D2A0 /* GavrCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				42CAD9E6196F3BBC004EE33D /* Model */,
 				4221F6DD196D1D000003D2A0 /* AGAAppDelegate.h */,
 				4221F6DE196D1D000003D2A0 /* AGAAppDelegate.m */,
 				4221F6E0196D1D000003D2A0 /* Main_iPhone.storyboard */,
@@ -125,8 +129,8 @@
 				4221F6E7196D1D000003D2A0 /* AGAViewController.m */,
 				4221F6E9196D1D000003D2A0 /* Images.xcassets */,
 				4221F6D5196D1D000003D2A0 /* Supporting Files */,
-				4221F706196D26F20003D2A0 /* AGAModelCalculator.h */,
-				4221F707196D26F20003D2A0 /* AGAModelCalculator.m */,
+				42CAD9F0196F44D9004EE33D /* AGAResultFormatter.h */,
+				42CAD9F1196F44D9004EE33D /* AGAResultFormatter.m */,
 			);
 			path = GavrCalculator;
 			sourceTree = "<group>";
@@ -158,6 +162,16 @@
 				4221F6F9196D1D000003D2A0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42CAD9E6196F3BBC004EE33D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42CAD9E7196F3BE5004EE33D /* AGAModelCalculator.h */,
+				42CAD9E8196F3BE5004EE33D /* AGAModelCalculator.m */,
+			);
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +276,8 @@
 				4221F6E8196D1D000003D2A0 /* AGAViewController.m in Sources */,
 				4221F6DF196D1D000003D2A0 /* AGAAppDelegate.m in Sources */,
 				4221F6DB196D1D000003D2A0 /* main.m in Sources */,
-				4221F708196D26F20003D2A0 /* AGAModelCalculator.m in Sources */,
+				42CAD9F2196F44D9004EE33D /* AGAResultFormatter.m in Sources */,
+				42CAD9E9196F3BE5004EE33D /* AGAModelCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +492,7 @@
 				4221F702196D1D000003D2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4221F703196D1D000003D2A0 /* Build configuration list for PBXNativeTarget "GavrCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +501,7 @@
 				4221F705196D1D000003D2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
