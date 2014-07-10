@@ -99,7 +99,6 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="djsfnsdkjn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OAp-5Q-J1Z"/>
                                     <action selector="operandTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="23R-ca-TIp"/>
                                 </connections>
                             </button>
@@ -234,6 +233,11 @@
                     </view>
                     <connections>
                         <outlet property="outputLabel" destination="T97-oO-S09" id="Skl-Nt-JRt"/>
+                        <outlet property="solveButton" destination="JQq-h6-lqj" id="Wsk-Vq-tVm"/>
+                        <outletCollection property="operationButtonsEnabler" destination="CS6-Ti-AkT" id="zN7-5z-Tic"/>
+                        <outletCollection property="operationButtonsEnabler" destination="H5F-Em-THA" id="8RH-6b-vkx"/>
+                        <outletCollection property="operationButtonsEnabler" destination="G1A-V4-Daa" id="BIW-tb-iQE"/>
+                        <outletCollection property="operationButtonsEnabler" destination="7Qh-uL-394" id="qxh-jA-HsR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
