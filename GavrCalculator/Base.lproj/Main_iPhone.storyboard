@@ -231,6 +231,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="outputLabel" destination="T97-oO-S09" id="Skl-Nt-JRt"/>
                         <outlet property="solveButton" destination="JQq-h6-lqj" id="Wsk-Vq-tVm"/>

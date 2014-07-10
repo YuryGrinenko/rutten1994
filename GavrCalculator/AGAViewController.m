@@ -11,12 +11,14 @@
 
 @interface AGAViewController (){
     BOOL operationFlag;
+    BOOL stillTypingOperandFlag;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *outputLabel;
 @property (nonatomic, strong) AGAModelCalculator* solver;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *operationButtonsEnabler;
 @property (weak, nonatomic) IBOutlet UIButton *solveButton;
+@property (strong, nonatomic) NSString * fullOperand;
 
 @end
 
@@ -32,6 +34,7 @@
     }
     self.solveButton.enabled = NO;
     operationFlag = NO;
+    stillTypingOperandFlag = NO;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -50,11 +53,21 @@
     }
     self.solveButton.enabled = NO;
     operationFlag = NO;
+    stillTypingOperandFlag = NO;
 }
 
 - (IBAction)operandTouched:(UIButton*)sender {
-    [self.solver setOperand:sender.titleLabel.text];
-    self.outputLabel.text = sender.titleLabel.text;
+    
+    if (stillTypingOperandFlag) {
+        self.fullOperand = [self.fullOperand stringByAppendingString:sender.titleLabel.text];
+        [self.solver setOperand:self.fullOperand];
+        self.outputLabel.text = self.fullOperand;
+    } else {
+        self.fullOperand = sender.titleLabel.text;
+        [self.solver setOperand:self.fullOperand];
+        self.outputLabel.text = self.fullOperand;
+    }
+    
     for (UIButton * operationButton in self.operationButtonsEnabler) {
         if (operationFlag) {
             operationButton.enabled = NO;
@@ -65,12 +78,14 @@
         if (operationFlag) {
             self.solveButton.enabled = YES;
         }
-        //operationFlag = NO;
     }
+    stillTypingOperandFlag = YES;
 }
 
 - (IBAction)operationTouched:(UIButton *)sender {
+    
     operationFlag = YES;
+    stillTypingOperandFlag = NO;
     [self.solver setOperation:sender.titleLabel.text];
     self.outputLabel.text = sender.titleLabel.text;
     for (UIButton * operationButton in self.operationButtonsEnabler) {
