@@ -37,14 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4221F6CB196D1D000003D2A0 /* GavrCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GavrCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4221F6CB196D1D000003D2A0 /* Smart Solver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Solver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4221F6CE196D1D000003D2A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4221F6D0196D1D000003D2A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4221F6D2196D1D000003D2A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4221F6D6196D1D000003D2A0 /* GavrCalculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GavrCalculator-Info.plist"; sourceTree = "<group>"; };
+		4221F6D6196D1D000003D2A0 /* Smart Solver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Smart Solver-Info.plist"; sourceTree = "<group>"; };
 		4221F6D8196D1D000003D2A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4221F6DA196D1D000003D2A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4221F6DC196D1D000003D2A0 /* GavrCalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GavrCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		4221F6DC196D1D000003D2A0 /* Smart Solver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smart Solver-Prefix.pch"; sourceTree = "<group>"; };
 		4221F6DD196D1D000003D2A0 /* AGAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGAAppDelegate.h; sourceTree = "<group>"; };
 		4221F6DE196D1D000003D2A0 /* AGAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAAppDelegate.m; sourceTree = "<group>"; };
 		4221F6E1196D1D000003D2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -52,9 +52,9 @@
 		4221F6E6196D1D000003D2A0 /* AGAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGAViewController.h; sourceTree = "<group>"; };
 		4221F6E7196D1D000003D2A0 /* AGAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAViewController.m; sourceTree = "<group>"; };
 		4221F6E9196D1D000003D2A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4221F6EF196D1D000003D2A0 /* GavrCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GavrCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4221F6EF196D1D000003D2A0 /* Smart SolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart SolverTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4221F6F0196D1D000003D2A0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4221F6F8196D1D000003D2A0 /* GavrCalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GavrCalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		4221F6F8196D1D000003D2A0 /* Smart SolverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Smart SolverTests-Info.plist"; sourceTree = "<group>"; };
 		4221F6FA196D1D000003D2A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4221F6FC196D1D000003D2A0 /* GavrCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GavrCalculatorTests.m; sourceTree = "<group>"; };
 		42CAD9E7196F3BE5004EE33D /* AGAModelCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGAModelCalculator.h; path = GavrCalculator/Model/AGAModelCalculator.h; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 		4221F6CC196D1D000003D2A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4221F6CB196D1D000003D2A0 /* GavrCalculator.app */,
-				4221F6EF196D1D000003D2A0 /* GavrCalculatorTests.xctest */,
+				4221F6CB196D1D000003D2A0 /* Smart Solver.app */,
+				4221F6EF196D1D000003D2A0 /* Smart SolverTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,10 +138,10 @@
 		4221F6D5196D1D000003D2A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4221F6D6196D1D000003D2A0 /* GavrCalculator-Info.plist */,
+				4221F6D6196D1D000003D2A0 /* Smart Solver-Info.plist */,
 				4221F6D7196D1D000003D2A0 /* InfoPlist.strings */,
 				4221F6DA196D1D000003D2A0 /* main.m */,
-				4221F6DC196D1D000003D2A0 /* GavrCalculator-Prefix.pch */,
+				4221F6DC196D1D000003D2A0 /* Smart Solver-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 		4221F6F7196D1D000003D2A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4221F6F8196D1D000003D2A0 /* GavrCalculatorTests-Info.plist */,
+				4221F6F8196D1D000003D2A0 /* Smart SolverTests-Info.plist */,
 				4221F6F9196D1D000003D2A0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4221F6CA196D1D000003D2A0 /* GavrCalculator */ = {
+		4221F6CA196D1D000003D2A0 /* Smart Solver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4221F700196D1D000003D2A0 /* Build configuration list for PBXNativeTarget "GavrCalculator" */;
+			buildConfigurationList = 4221F700196D1D000003D2A0 /* Build configuration list for PBXNativeTarget "Smart Solver" */;
 			buildPhases = (
 				4221F6C7196D1D000003D2A0 /* Sources */,
 				4221F6C8196D1D000003D2A0 /* Frameworks */,
@@ -189,14 +189,14 @@
 			);
 			dependencies = (
 			);
-			name = GavrCalculator;
+			name = "Smart Solver";
 			productName = GavrCalculator;
-			productReference = 4221F6CB196D1D000003D2A0 /* GavrCalculator.app */;
+			productReference = 4221F6CB196D1D000003D2A0 /* Smart Solver.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4221F6EE196D1D000003D2A0 /* GavrCalculatorTests */ = {
+		4221F6EE196D1D000003D2A0 /* Smart SolverTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4221F703196D1D000003D2A0 /* Build configuration list for PBXNativeTarget "GavrCalculatorTests" */;
+			buildConfigurationList = 4221F703196D1D000003D2A0 /* Build configuration list for PBXNativeTarget "Smart SolverTests" */;
 			buildPhases = (
 				4221F6EB196D1D000003D2A0 /* Sources */,
 				4221F6EC196D1D000003D2A0 /* Frameworks */,
@@ -207,9 +207,9 @@
 			dependencies = (
 				4221F6F5196D1D000003D2A0 /* PBXTargetDependency */,
 			);
-			name = GavrCalculatorTests;
+			name = "Smart SolverTests";
 			productName = GavrCalculatorTests;
-			productReference = 4221F6EF196D1D000003D2A0 /* GavrCalculatorTests.xctest */;
+			productReference = 4221F6EF196D1D000003D2A0 /* Smart SolverTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4221F6C6196D1D000003D2A0 /* Build configuration list for PBXProject "GavrCalculator" */;
+			buildConfigurationList = 4221F6C6196D1D000003D2A0 /* Build configuration list for PBXProject "Smart Solver" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -240,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4221F6CA196D1D000003D2A0 /* GavrCalculator */,
-				4221F6EE196D1D000003D2A0 /* GavrCalculatorTests */,
+				4221F6CA196D1D000003D2A0 /* Smart Solver */,
+				4221F6EE196D1D000003D2A0 /* Smart SolverTests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,7 +294,7 @@
 /* Begin PBXTargetDependency section */
 		4221F6F5196D1D000003D2A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4221F6CA196D1D000003D2A0 /* GavrCalculator */;
+			target = 4221F6CA196D1D000003D2A0 /* Smart Solver */;
 			targetProxy = 4221F6F4196D1D000003D2A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -413,9 +413,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GavrCalculator/GavrCalculator-Prefix.pch";
-				INFOPLIST_FILE = "GavrCalculator/GavrCalculator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "GavrCalculator/Smart Solver-Prefix.pch";
+				INFOPLIST_FILE = "GavrCalculator/Smart Solver-Info.plist";
+				PRODUCT_NAME = "Smart Solver";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -426,9 +426,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GavrCalculator/GavrCalculator-Prefix.pch";
-				INFOPLIST_FILE = "GavrCalculator/GavrCalculator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "GavrCalculator/Smart Solver-Prefix.pch";
+				INFOPLIST_FILE = "GavrCalculator/Smart Solver-Info.plist";
+				PRODUCT_NAME = "Smart Solver";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -448,8 +448,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GavrCalculatorTests/GavrCalculatorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GavrCalculatorTests/Smart SolverTests-Info.plist";
+				PRODUCT_NAME = "Smart SolverTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -466,8 +466,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GavrCalculator/GavrCalculator-Prefix.pch";
-				INFOPLIST_FILE = "GavrCalculatorTests/GavrCalculatorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GavrCalculatorTests/Smart SolverTests-Info.plist";
+				PRODUCT_NAME = "Smart SolverTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -476,7 +476,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4221F6C6196D1D000003D2A0 /* Build configuration list for PBXProject "GavrCalculator" */ = {
+		4221F6C6196D1D000003D2A0 /* Build configuration list for PBXProject "Smart Solver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4221F6FE196D1D000003D2A0 /* Debug */,
@@ -485,7 +485,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4221F700196D1D000003D2A0 /* Build configuration list for PBXNativeTarget "GavrCalculator" */ = {
+		4221F700196D1D000003D2A0 /* Build configuration list for PBXNativeTarget "Smart Solver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4221F701196D1D000003D2A0 /* Debug */,
@@ -494,7 +494,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4221F703196D1D000003D2A0 /* Build configuration list for PBXNativeTarget "GavrCalculatorTests" */ = {
+		4221F703196D1D000003D2A0 /* Build configuration list for PBXNativeTarget "Smart SolverTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4221F704196D1D000003D2A0 /* Debug */,

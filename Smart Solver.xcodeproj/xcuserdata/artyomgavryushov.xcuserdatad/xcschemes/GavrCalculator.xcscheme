@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4221F6CA196D1D000003D2A0"
                BuildableName = "GavrCalculator.app"
-               BlueprintName = "GavrCalculator"
-               ReferencedContainer = "container:GavrCalculator.xcodeproj">
+               BlueprintName = "Smart Solver"
+               ReferencedContainer = "container:Smart Solver.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4221F6EE196D1D000003D2A0"
                BuildableName = "GavrCalculatorTests.xctest"
-               BlueprintName = "GavrCalculatorTests"
-               ReferencedContainer = "container:GavrCalculator.xcodeproj">
+               BlueprintName = "Smart SolverTests"
+               ReferencedContainer = "container:Smart Solver.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4221F6CA196D1D000003D2A0"
             BuildableName = "GavrCalculator.app"
-            BlueprintName = "GavrCalculator"
-            ReferencedContainer = "container:GavrCalculator.xcodeproj">
+            BlueprintName = "Smart Solver"
+            ReferencedContainer = "container:Smart Solver.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4221F6CA196D1D000003D2A0"
             BuildableName = "GavrCalculator.app"
-            BlueprintName = "GavrCalculator"
-            ReferencedContainer = "container:GavrCalculator.xcodeproj">
+            BlueprintName = "Smart Solver"
+            ReferencedContainer = "container:Smart Solver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4221F6CA196D1D000003D2A0"
             BuildableName = "GavrCalculator.app"
-            BlueprintName = "GavrCalculator"
-            ReferencedContainer = "container:GavrCalculator.xcodeproj">
+            BlueprintName = "Smart Solver"
+            ReferencedContainer = "container:Smart Solver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
