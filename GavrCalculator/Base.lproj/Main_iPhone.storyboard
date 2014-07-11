@@ -41,6 +41,9 @@
                                 <state key="normal" title=".">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="operandTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MYA-8R-feF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buT-Ih-mCJ">
                                 <rect key="frame" x="82" y="435" width="65" height="55"/>
