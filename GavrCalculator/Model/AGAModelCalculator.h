@@ -21,6 +21,7 @@
 //- (void) setOperand: (NSString *) operand;
 - (double) doOperation;
 - (void) setOperand: (NSString *)operand;
+- (NSString *) signChange: (NSString *) operand;
 
 
 

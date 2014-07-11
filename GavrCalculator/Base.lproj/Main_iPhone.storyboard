@@ -182,8 +182,21 @@
                                     <action selector="operationTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ptp-PZ-rkv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shq-Xf-rZL">
+                                <rect key="frame" x="140" y="232" width="89" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.4176139096" green="0.97510762120000005" blue="0.095999849779999993" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signChangeTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g8L-aH-isK"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-aX-TLY">
-                                <rect key="frame" x="0.0" y="232" width="229" height="65"/>
+                                <rect key="frame" x="0.0" y="232" width="122" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97510762117346939" green="0.45207116769958583" blue="0.10984252021146508" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -235,6 +248,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="outputLabel" destination="T97-oO-S09" id="Skl-Nt-JRt"/>
                         <outlet property="solveButton" destination="JQq-h6-lqj" id="Wsk-Vq-tVm"/>

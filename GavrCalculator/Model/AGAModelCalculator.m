@@ -13,24 +13,73 @@
 - (double) doOperation {
     
     if ([self.operation isEqualToString:@"+"]){
+        
         rezultOperand = self.firstOperand.doubleValue + self.secondOperand.doubleValue;
+        
     } else if ([self.operation isEqualToString:@"-"]) {
+        
         rezultOperand = self.firstOperand.doubleValue - self.secondOperand.doubleValue;
+        
     } else if ([self.operation isEqualToString:@"x"]) {
+        
         rezultOperand = self.firstOperand.doubleValue * self.secondOperand.doubleValue;
+        
     } else if ([self.operation isEqualToString:@":"]) {
+        
         rezultOperand = self.firstOperand.doubleValue / self.secondOperand.doubleValue;
     }
-   // return ([NSString stringWithFormat:@"%f", rezultOperand]);
     return rezultOperand;
 }
 
 - (void) setOperand: (NSString *)operand {
+    
     if (!self.operation) {
+        
         self.firstOperand = operand;
+        
     } else {
+        
         self.secondOperand = operand;
+        
     }
+}
+
+- (NSString *) signChange: (NSString *) operand {
+    
+    double changedOperand;
+    if (!self.operation) {
+        
+        if ([self.firstOperand isEqualToString:@"-"]) {
+            
+            self.firstOperand = nil;
+            
+        } else if (self.firstOperand) {
+            
+            changedOperand = (-1) * self.firstOperand.doubleValue;
+            self.firstOperand = [NSString stringWithFormat:@"%g",changedOperand];
+            
+        } else if (!self.firstOperand) {
+            self.firstOperand = @"-";
+        }
+        return self.firstOperand;
+    } else {
+        
+        if ([self.secondOperand isEqualToString:@"-"]) {
+            
+            self.secondOperand = nil;
+            
+        } else if (self.secondOperand) {
+            
+            changedOperand = (-1) * self.secondOperand.doubleValue;
+            self.secondOperand = [NSString stringWithFormat:@"%g",changedOperand];
+            
+        } else if (!self.secondOperand) {
+            self.secondOperand = @"-";
+        }
+        return self.secondOperand;
+        
+    }
+    
 }
 
 

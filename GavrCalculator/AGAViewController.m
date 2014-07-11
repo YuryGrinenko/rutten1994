@@ -50,7 +50,7 @@
 - (IBAction)doCancel:(id)sender {
     self.solver = nil;
     self.outputLabel.text = @"0";
-    _solver = [[AGAModelCalculator alloc]init];//////////// Note: Сделать Lazy init
+    _solver = [[AGAModelCalculator alloc]init];
     
     for (UIButton * operationButton in self.operationButtonsEnabler) {
         operationButton.enabled = NO;
@@ -99,12 +99,23 @@
 
 - (IBAction)solveTouched:(id)sender {
     
-    
     [self.solver doOperation];
     self.outputLabel.text = [self.fullResult resultInStringForm:self.solver];
-    
     self.solveButton.enabled = NO;
 }
 
+- (IBAction)signChangeTouched:(id)sender {
+    
+    self.fullOperand = [self.solver signChange:self.fullOperand];
+    
+    if (self.fullOperand) {
+        stillTypingOperandFlag = YES;
+        self.outputLabel.text = [self.fullOperand stringByAppendingString:@"0"];
+    } else {
+        stillTypingOperandFlag = NO;
+        self.outputLabel.text = @"0";
+    }
+    
+}
 
 @end
