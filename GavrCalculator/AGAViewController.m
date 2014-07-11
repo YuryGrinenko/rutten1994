@@ -29,9 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     _solver = [[AGAModelCalculator alloc]init];
    _fullResult = [[AGAResultFormatter alloc] init];
-    
     
     for (UIButton * operationButton in self.operationButtonsEnabler) {
         operationButton.enabled = NO;
@@ -110,7 +110,10 @@
     
     if (self.fullOperand) {
         stillTypingOperandFlag = YES;
-        self.outputLabel.text = [self.fullOperand stringByAppendingString:@"0"];
+        if ([self.outputLabel.text isEqualToString:@"0"]) {
+            self.outputLabel.text = [self.fullOperand stringByAppendingString:@"0"];
+        } else { self.outputLabel.text = self.fullOperand; }
+        
     } else {
         stillTypingOperandFlag = NO;
         self.outputLabel.text = @"0";
