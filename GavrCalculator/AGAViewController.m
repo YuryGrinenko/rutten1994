@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *solveButton;
 @property (strong, nonatomic) NSString * fullOperand;
 @property (strong, nonatomic) AGAResultFormatter * fullResult;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *operandButtonsEnabler;
 
 @end
 
@@ -58,6 +59,9 @@
     self.solveButton.enabled = NO;
     operationFlag = NO;
     stillTypingOperandFlag = NO;
+    for (UIButton * operandButton in self.operandButtonsEnabler) {
+        operandButton.enabled = YES;
+    }
 }
 
 - (IBAction)operandTouched:(UIButton*)sender {
@@ -102,6 +106,9 @@
     [self.solver doOperation];
     self.outputLabel.text = [self.fullResult resultInStringForm:self.solver];
     self.solveButton.enabled = NO;
+    for (UIButton * operandButton in self.operandButtonsEnabler) {
+        operandButton.enabled = NO;
+    }
 }
 
 - (IBAction)signChangeTouched:(id)sender {

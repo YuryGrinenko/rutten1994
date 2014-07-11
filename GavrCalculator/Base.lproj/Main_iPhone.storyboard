@@ -132,9 +132,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.58578320671275941" blue="0.11710436678205349" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="45"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="=">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="solveTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Nr-2e-0ei"/>
@@ -145,9 +145,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.58578320671275941" blue="0.11710436678205349" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="45"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="operationTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UgA-rr-tgd"/>
@@ -158,9 +158,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.58578320671275941" blue="0.11710436678205349" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="45"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="-">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="operationTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QnB-GL-PI6"/>
@@ -171,9 +171,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.58578320671275941" blue="0.11710436678205349" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="45"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="x">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="operationTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pcf-9n-fj3"/>
@@ -184,9 +184,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.58578320671275941" blue="0.11710436678205349" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="45"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title=":">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="operationTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ptp-PZ-rkv"/>
@@ -271,6 +271,18 @@
                         <outletCollection property="operationButtonsEnabler" destination="H5F-Em-THA" id="8RH-6b-vkx"/>
                         <outletCollection property="operationButtonsEnabler" destination="G1A-V4-Daa" id="BIW-tb-iQE"/>
                         <outletCollection property="operationButtonsEnabler" destination="7Qh-uL-394" id="qxh-jA-HsR"/>
+                        <outletCollection property="operandButtonsEnabler" destination="shq-Xf-rZL" id="Sf3-gY-9YP"/>
+                        <outletCollection property="operandButtonsEnabler" destination="sfS-hr-QHS" id="AuG-kq-gHW"/>
+                        <outletCollection property="operandButtonsEnabler" destination="qR6-rL-TqJ" id="Wim-71-snk"/>
+                        <outletCollection property="operandButtonsEnabler" destination="YgW-rN-Ikm" id="8Fa-Xp-nTk"/>
+                        <outletCollection property="operandButtonsEnabler" destination="ope-Gg-CbZ" id="8IS-zO-T90"/>
+                        <outletCollection property="operandButtonsEnabler" destination="cOL-Dj-7yS" id="ZMh-tZ-U8S"/>
+                        <outletCollection property="operandButtonsEnabler" destination="Xrv-Uh-wzj" id="t8S-xo-bbV"/>
+                        <outletCollection property="operandButtonsEnabler" destination="A5N-If-V9Y" id="Swc-Lz-nxw"/>
+                        <outletCollection property="operandButtonsEnabler" destination="buT-Ih-mCJ" id="c6H-t1-vmp"/>
+                        <outletCollection property="operandButtonsEnabler" destination="DnK-F7-6zY" id="qrb-Bl-GbN"/>
+                        <outletCollection property="operandButtonsEnabler" destination="sVw-6E-2Et" id="W27-EY-riy"/>
+                        <outletCollection property="operandButtonsEnabler" destination="IDV-SD-dkT" id="uTI-AO-pmU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
