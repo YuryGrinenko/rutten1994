@@ -12,6 +12,7 @@
 
 @interface AGAResultFormatter : NSObject
 
+#warning Надо изменить имя метода, на что-то вроде formattedResultFromCalculator, с текущим названием неясно, что он делает
 - (NSString *) resultInStringForm:(AGAModelCalculator *) result;
 
 @end

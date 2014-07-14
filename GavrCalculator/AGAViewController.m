@@ -17,15 +17,23 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *outputLabel;
 @property (nonatomic, strong) AGAModelCalculator* solver;
+
+#warning operationButtonsEnabler - не лучшее название для массива, лучше operationButtonsArray
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *operationButtonsEnabler;
 @property (weak, nonatomic) IBOutlet UIButton *solveButton;
 @property (strong, nonatomic) NSString * fullOperand;
+
+#warning Название fullResult сбивает с толку, будто это строка в результатом, по факту это ведь форматтер
 @property (strong, nonatomic) AGAResultFormatter * fullResult;
+
+#warning Лучше operandButtonsArray
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *operandButtonsEnabler;
 
 @end
 
 @implementation AGAViewController
+
+#warning Нbжний ряд кнопок не виден на симуляторе 3.5", надо поправить layout
 
 - (void)viewDidLoad
 {
@@ -34,6 +42,7 @@
     _solver = [[AGAModelCalculator alloc]init];
    _fullResult = [[AGAResultFormatter alloc] init];
     
+#warning Следующие три строки кода я бы вынес в отдельный метод вроде - (void)setOperationButtonsEnabled:(BOOL)enabled , потому что эти строки дублируются в нескольких местах
     for (UIButton * operationButton in self.operationButtonsEnabler) {
         operationButton.enabled = NO;
     }
@@ -59,13 +68,15 @@
     self.solveButton.enabled = NO;
     operationFlag = NO;
     stillTypingOperandFlag = NO;
+    
+#warning Две следующие строки также лучше оформить отдельным методом, чтобы избежать дублирования
     for (UIButton * operandButton in self.operandButtonsEnabler) {
         operandButton.enabled = YES;
     }
 }
 
 - (IBAction)operandTouched:(UIButton*)sender {
-    
+#warning Логику ввода операндов и операции лучше вынести в модель либо добавить еще отдельный объект-контроллер
     if (stillTypingOperandFlag) {
         self.fullOperand = [self.fullOperand stringByAppendingString:sender.titleLabel.text];
         [self.solver setOperand:self.fullOperand];

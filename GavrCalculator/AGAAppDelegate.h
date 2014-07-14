@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#warning Префикс для классов лучше брать по буквам названия проекта, например SSR
 @interface AGAAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

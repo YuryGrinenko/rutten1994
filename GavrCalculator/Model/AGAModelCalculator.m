@@ -11,9 +11,9 @@
 @implementation AGAModelCalculator
 
 - (double) doOperation {
-    
+#warning Строковые константы операций лучше вынести в перечисление (enum)
     if ([self.operation isEqualToString:@"+"]){
-        
+#warning rezult с ошибкой
         rezultOperand = self.firstOperand.doubleValue + self.secondOperand.doubleValue;
         
     } else if ([self.operation isEqualToString:@"-"]) {
@@ -44,6 +44,7 @@
     }
 }
 
+#warning Имя метода ничего не говорит о типе возвращаемого результата и о принимаемом параметре
 - (NSString *) signChange: (NSString *) operand {
     
     double changedOperand;
